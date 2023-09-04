@@ -191,7 +191,7 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("./WhatsApp\ Image\ 2023-08-11\ at\ 10.44.04\ PM.jpeg") no-repeat center;
+    background: url("./pexels-markus-spiske-2061168.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -426,23 +426,36 @@ section .title::after {
 }
 
 .skills-content .right .html::before {
-    width: 90%;
+    width: 100%;
 }
 
-.skills-content .right .css::before {
-    width: 60%;
-}
-
-.skills-content .right .js::before {
+.skills-content .right .PHP::before {
     width: 80%;
 }
 
-.skills-content .right .php::before {
-    width: 50%;
+.skills-content .right .css::before {
+    width: 100%;
 }
+
+.skills-content .right .js::before {
+    width: 100%;
+}
+
+.skills-content .right .php::before {
+    width: 90%;
+}
+
+.skills-content .right .java::before {
+    width: 95%;
+}
+
 
 .skills-content .right .mysql::before {
     width: 70%;
+}
+
+.skills-content .right .python::before {
+    width: 80%;
 }
 
 /* teams section styling */
@@ -801,5 +814,48 @@ footer span a:hover {
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+}
+
+
+/* Style for the social media section */
+.social-media {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.social-media h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 0%;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .social-icons {
+        flex-wrap: wrap;
+    }
+
+    .social-icons a {
+        margin: 10px 0;
     }
 }
